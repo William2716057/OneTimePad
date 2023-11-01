@@ -7,7 +7,7 @@
 
 
 #include <iostream>
-
+//accesses previous functions 
 int main()
 {
     //length of plaintext and key
@@ -16,9 +16,13 @@ int main()
     generateKey(length);
 
     //read plaintext
-    std::string plaintext = readPlaintext("file.txt");
+    std::string plaintext = readPlaintext("plaintext.txt");
 
-    //encrypt
+    //encrypt plaintext
+    std::string key = readPlaintext("key.txt");
+    std::string ciphertext = encrypt(plaintext, key);
+
+    //write ciphertext
 }
 
 
