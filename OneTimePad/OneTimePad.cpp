@@ -20,7 +20,10 @@ void generateKey(int length) {
 
 //read plaintext from which to create key
 
+//function takes one argument, reference to string called filename
+//will read contents of file and return as string
 std::string readPlaintext(const std::string& filename) {
+	//store contents of file
 	std::string plaintext;
 	std::ifstream file(filename);
 	if (file.is_open()) {
