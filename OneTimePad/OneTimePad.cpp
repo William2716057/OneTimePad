@@ -26,6 +26,7 @@ std::string readPlaintext(const std::string& filename) {
 	//store contents of file
 	std::string plaintext;
 	std::ifstream file(filename);
+
 	if (file.is_open()) {
 		char c;
 		while (file.get(c)) {
