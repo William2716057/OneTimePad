@@ -39,3 +39,11 @@ std::string encrypt(const std::string& plaintext, const std::string& key) {
 	}
 	return ciphertext;
 }
+
+void writeCiphertext(const std::string& ciphertext, const std::string& filename) {
+	std::ofstream file(filename);
+	if (file.is_open()) {
+		file << ciphertext;
+		file.close();
+	}
+}
