@@ -23,6 +23,7 @@ int main()
     std::string ciphertext = encrypt(plaintext, key);
 
     //write ciphertext
+    writeCiphertext(ciphertext, "ciphertext.txt");
 }
 
 
