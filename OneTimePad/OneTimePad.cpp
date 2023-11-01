@@ -10,7 +10,15 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //length of plaintext and key
+    int length = 100;
+
+    generateKey(length);
+
+    //read plaintext
+    std::string plaintext = readPlaintext("file.txt");
+
+    //encrypt
 }
 
 
