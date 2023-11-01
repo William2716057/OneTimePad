@@ -1,9 +1,6 @@
 // OneTimePad.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-
-
-
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -59,8 +56,6 @@ void writeCiphertext(const std::string& ciphertext, const std::string& filename)
 	}
 }
 
-
-#include <iostream>
 //accesses previous functions 
 int main()
 {
@@ -83,9 +78,7 @@ int main()
     std::string decryptedText = decrypt(ciphertext, key);
 
     //print
-    std::cout << "decrypted: " << decryptedText << std::end1;
+    std::cout << "decrypted: " << decryptedText << std::endl;
 
     return 0;
 }
-
-
