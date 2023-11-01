@@ -38,6 +38,7 @@ std::string readPlaintext(const std::string& filename) {
 		//file needs to be closed after reading
 		file.close();
 	}
+
 	return plaintext;
 }
 
